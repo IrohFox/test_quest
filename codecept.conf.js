@@ -4,7 +4,7 @@ const { setHeadlessWhen } = require('@codeceptjs/configure');
 // HEADLESS=true npx codecept run
 setHeadlessWhen(process.env.HEADLESS);
 const { setWindowSize } = require('@codeceptjs/configure');
-setWindowSize(1600, 1200);
+setWindowSize(1920, 1080);
 
 exports.config = {
   tests: './*_test.js',
