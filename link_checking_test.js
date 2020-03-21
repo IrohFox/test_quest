@@ -1,9 +1,15 @@
 Feature('link_checking');
 
-Scenario('Софт для бысторого создания скриншотов', (I) => {
+const IDS = require('./identifiers'); 
+
+Scenario('Проверка работы ссылки "Софт для быстрого создания скриншота"', (I) => {
     I.amOnPage('http://blog.csssr.ru/qa-engineer');
     I.waitForText ('НАХОДИТЬ НЕСОВЕРШЕНСТВА');
-    I.click('НАХОДИТЬ НЕСОВЕРШЕНСТВА');
+    
+    I.click(IDS.graphs.errors);
     I.click('Софт для быстрого создания скриншотов');
-    I.waitForVisible('Monosnap');
+    
+    I.wait(2);
+    I.see('Monosnap');
+
 });
