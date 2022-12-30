@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/IrohFox/test_quest#readme",
   "devDependencies": {
-    "codeceptjs": "^2.5.0",
+    "codeceptjs": "^3.0.0",
     "puppeteer": "^2.1.1"
   }
 }
